@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="372.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.GerenciarSessaoController">
+    <stylesheets>
+        <URL value="@/br/com/fatec/css/gerenciarsessao.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="99.0" layoutY="14.0" text="Gerenciamento de Sessões">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="77.0" prefWidth="71.0" text="Sessão:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="130.0" text="Filme: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="304.0" layoutY="80.0" prefHeight="30.0" prefWidth="44.0" text="Sala:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="178.0" text="Data Inicio:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="229.0" text="Data fim:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="336.0" layoutY="177.0" text="Horario:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_SessaoId" layoutX="125.0" layoutY="79.0" prefHeight="30.0" prefWidth="86.0" />
+      <TextField fx:id="txt_DataInicio" layoutX="158.0" layoutY="178.0" prefHeight="30.0" prefWidth="145.0" />
+      <TextField fx:id="txt_FilmeId" layoutX="205.0" layoutY="129.0" prefHeight="30.0" prefWidth="343.0" />
+      <TextField fx:id="txt_DataFim" layoutX="158.0" layoutY="229.0" prefHeight="30.0" prefWidth="146.0" />
+      <TextField fx:id="txt_Horas" layoutX="413.0" layoutY="178.0" prefHeight="30.0" prefWidth="135.0" />
+      <TextField fx:id="txt_Sala" layoutX="352.0" layoutY="80.0" prefHeight="30.0" prefWidth="80.0" />
+      <ComboBox fx:id="cb_Filme" layoutX="108.0" layoutY="129.0" onAction="#cb_Filme_Change" prefHeight="29.0" prefWidth="80.0" />
+      <Button fx:id="btn_Pesquisa" layoutX="219.0" layoutY="79.0" mnemonicParsing="false" onAction="#btn_Pesquisa_Click" prefHeight="30.0" prefWidth="65.0" text="Pesquisa" />
+      <HBox layoutX="48.0" layoutY="281.0" prefHeight="66.0" prefWidth="498.0" spacing="20.0">
+         <children>
+            <Button fx:id="btn_gravar" mnemonicParsing="false" onAction="#btn_gravar_Click" prefHeight="60.0" prefWidth="200.0" text="Gravar" />
+            <Button fx:id="btn_excluir" mnemonicParsing="false" onAction="#btn_excluir_Click" prefHeight="60.0" prefWidth="200.0" text="Excluir" />
+            <Button fx:id="btn_voltar" mnemonicParsing="false" onAction="#btn_voltar_Click" prefHeight="60.0" prefWidth="200.0" text="Voltar" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

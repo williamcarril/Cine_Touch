@@ -19,6 +19,7 @@
          <children>
             <Button fx:id="btnGravar" maxHeight="60.0" mnemonicParsing="false" onAction="#btnGravar_Click" prefWidth="180.0" text="Gravar" />
             <Button fx:id="btnExcluir" maxHeight="60.0" mnemonicParsing="false" onAction="#btnExcluir_Click" prefWidth="180.0" text="Excluir" />
+            <Button fx:id="btnVisualizar" mnemonicParsing="false" onAction="#btnVisualizar_Click" prefHeight="60.0" prefWidth="180.0" text="Visualizar Filmes" />
             <Button fx:id="btnVoltar" maxHeight="60.0" mnemonicParsing="false" onAction="#btnVoltar_Click" prefWidth="180.0" text="Voltar" />
          </children>
          <padding>
@@ -77,6 +78,10 @@
          </font>
       </TextField>
       <ComboBox fx:id="cbId" layoutX="83.0" layoutY="82.0" onAction="#cbId_Change" prefHeight="28.0" prefWidth="56.0" />
+<<<<<<< HEAD
       <Button layoutX="476.0" layoutY="128.0" mnemonicParsing="false" text="Button" />
+=======
+      <Button fx:id="btnPesquisar" layoutX="443.0" layoutY="79.0" mnemonicParsing="false" onAction="#btnPesquisar_Click" prefHeight="116.0" prefWidth="122.0" text="Pesquisar" />
+>>>>>>> main
    </children>
 </AnchorPane>
